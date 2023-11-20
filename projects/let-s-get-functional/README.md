@@ -70,6 +70,7 @@ const _ = require('lodown-oliviasaborush');
  - **Input**: `Array`, `Customer`, `Letter`
  - **Output**: `Number`
  - **Constraints**:
+ 
 
 ### 8: `friendsCount`
  - **Objective**: Find the customers' names that have a given customer's name in their friends list

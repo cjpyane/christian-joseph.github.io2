@@ -418,6 +418,21 @@ _.every = function(coll, func){
 * Examples:
 *   _.reduce([1,2,3], function(previousSum, currentValue, currentIndex){ return previousSum + currentValue }, 0) -> 6
 */
+_.reduce = function(arr, func, seed){
+    var result;
+   if(seed === undefined){
+    result = arr[0];
+    for(let i = 1; i < arr.length; i++){//start @ next length after 1
+        result = func(result, arr[i], i, arr)
+    }
+   }else{
+    result = seed;
+    for(let i = 0; i < arr.length; i++){
+        result = func(result, arr[i], i, arr)
+    }
+   }
+   return result
+}
 
 
 /** _.extend
